@@ -1,0 +1,4 @@
+# tablist_spigot
+タブリストをカスタマイズできます
+
+placeholderapiが必要です

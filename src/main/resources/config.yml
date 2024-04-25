@@ -1,0 +1,2 @@
+tablist-format: "%player_name% &2[%player_world%]&r  &b%player_ping%"
+tablist-footer: ""

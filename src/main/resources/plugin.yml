@@ -1,0 +1,5 @@
+name: tablist
+version: '${project.version}'
+main: org.ichiru.tablist.Tablist
+api-version: '1.20'
+depend: [PlaceholderAPI]
