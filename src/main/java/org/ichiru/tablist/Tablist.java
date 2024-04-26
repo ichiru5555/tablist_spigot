@@ -29,6 +29,7 @@ public final class Tablist extends JavaPlugin {
     }
 
     private void updatePlayerTabList(Player player) {
+        String header = PlaceholderAPI.setPlaceholders(player, ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(getConfig().getString("tablist-header"))));
         String format = getConfig().getString("tablist-format", "&b%player_name% [%world%] %ping%");
         String footerText = getConfig().getString("tablist-footer");
         footerText = ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(footerText));
@@ -38,6 +39,7 @@ public final class Tablist extends JavaPlugin {
 
         playerListName = ChatColor.translateAlternateColorCodes('&', playerListName);
 
+        player.setPlayerListHeader(header);
         player.setPlayerListName(playerListName);
         player.setPlayerListFooter(format_footer);
     }

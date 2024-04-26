@@ -1,2 +1,3 @@
-tablist-format: "%player_name% &2[%player_world%]&r  &b%player_ping%"
+tablist-header: ""
+tablist-format: "&a[%player_ping%] %player_name% &2[%player_world%]&r"
 tablist-footer: ""
